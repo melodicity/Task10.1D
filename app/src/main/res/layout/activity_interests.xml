@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.InterestsActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/interests_placeholder"
+        android:layout_marginTop="24sp"
+        android:layout_marginStart="36sp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary10"/>
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/interests_selection_description"
+        android:layout_marginTop="8sp"
+        android:layout_marginStart="36sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary20"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInterests"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_marginHorizontal="48sp"
+        android:layout_marginVertical="24sp"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="48sp"/>
+
+</LinearLayout>

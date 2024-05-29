@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ShareActivity"
+    android:background="@drawable/bg_gradient">
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary10"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/username_hint"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="58dp"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary10"/>
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/tvName"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="22dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_account"
+        android:contentDescription="@string/profile_picture" />
+
+    <LinearLayout
+        android:id="@+id/llTotalQuestions"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivAvatar"
+        android:layout_marginHorizontal="36sp"
+        android:padding="16dp"
+        android:background="@drawable/panel_primary_light"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTotalQuestionsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/total_questions"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary80"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvTotalQuestionsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/_99"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary90"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCorrectQuestions"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivAvatar"
+        android:layout_marginHorizontal="36sp"
+        android:layout_alignParentEnd="true"
+        android:padding="16dp"
+        android:background="@drawable/panel_primary_light"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCorrectQuestionsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/correctly_answered"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary80"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvCorrectQuestionsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/_99"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary90"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llIncorrectQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llTotalQuestions"
+        android:layout_marginHorizontal="36sp"
+        android:layout_marginVertical="16sp"
+        android:layout_centerInParent="true"
+        android:padding="16dp"
+        android:background="@drawable/panel_primary_light"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvIncorrectQuestionsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/incorrect_answers"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary80"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvIncorrectQuestionsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/_99"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary90"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/llIncorrectQuestions"
+        android:text="@string/share"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="36sp"/>
+
+</RelativeLayout>

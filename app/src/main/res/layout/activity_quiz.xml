@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.QuizActivity"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/flBanner"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/banner_primary">
+
+        <ImageView
+            android:id="@+id/ivSparkles"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_sparkles"
+            android:importantForAccessibility="no" />
+
+        <TextView
+            android:id="@+id/tvBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="40dp"
+            android:text="@string/generated_by_ai"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary10"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/generated_task_title_placeholder"
+        android:layout_marginHorizontal="24dp"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary10"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/generated_task_description_placeholder"
+        android:layout_marginHorizontal="24dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary10"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_marginHorizontal="28sp"
+        android:layout_marginVertical="18sp"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="48sp"/>
+
+</LinearLayout>

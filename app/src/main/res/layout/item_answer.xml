@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/panel_primary"
+    android:elevation="6dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/generated_qn_title_placeholder"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary90"/>
+
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/generated_ans_placeholder"
+        android:textSize="18sp"
+        android:textColor="@color/primary80"/>
+
+    <TextView
+        android:id="@+id/tvCorrect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:gravity="center"
+        android:text="@string/correct"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary90"/>
+
+    <TextView
+        android:id="@+id/tvCorrectAnswerLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/correct_answer_is"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary80"/>
+
+    <TextView
+        android:id="@+id/tvCorrectAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/generated_ans_placeholder"
+        android:layout_marginStart="8dp"
+        android:textSize="18sp"
+        android:textColor="@color/primary80"/>
+
+</LinearLayout>

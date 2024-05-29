@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:background="@drawable/bg_gradient">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_placeholder"
+        android:layout_marginTop="140sp"
+        android:layout_marginStart="48sp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary10"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username_hint"
+        android:autofillHints="username"
+        android:inputType="text"
+        android:layout_marginHorizontal="48sp"
+        android:layout_below="@id/tvWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary10"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_hint"
+        android:autofillHints="password"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="48sp"
+        android:layout_below="@id/etUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary10"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_marginHorizontal="48sp"
+        android:layout_below="@id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32sp"/>
+
+    <com.example.task101d.widget.ClickableTextView
+        android:id="@+id/ctvNeedAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/need_an_account"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16sp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

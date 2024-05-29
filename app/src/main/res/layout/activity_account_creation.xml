@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AccountCreationActivity"
+    android:background="@drawable/bg_gradient">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setup_placeholder"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="36sp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary10"/>
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_account"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/profile_picture" />
+
+    <ImageView
+        android:id="@+id/ivPlusIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_add"
+        android:layout_alignEnd="@id/ivAvatar"
+        android:layout_alignBottom="@+id/ivAvatar"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:importantForAccessibility="no" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username_hint"
+        android:autofillHints="username"
+        android:inputType="text"
+        android:layout_below="@id/ivAvatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="48sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/primary10"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_hint"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/etUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="48sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/primary10"/>
+
+    <EditText
+        android:id="@+id/etConfirmEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_email_hint"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/etEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="48sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/primary10"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_hint"
+        android:autofillHints="password"
+        android:inputType="textPassword"
+        android:layout_below="@id/etConfirmEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="48sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/primary10"/>
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password_hint"
+        android:autofillHints="password"
+        android:inputType="textPassword"
+        android:layout_below="@id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="48sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/primary10"/>
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_hint"
+        android:autofillHints="phone"
+        android:inputType="phone"
+        android:layout_below="@id/etConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="48sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/primary10"/>
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_new_account"
+        android:layout_marginHorizontal="48sp"
+        android:layout_below="@id/etPhoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

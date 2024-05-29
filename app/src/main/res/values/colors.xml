@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary10">#012626</color>
+    <color name="primary20">#025258</color>
+    <color name="primary30">#06788A</color>
+    <color name="primary40">#149BBB</color>
+    <color name="primary50">#34BFED</color>
+    <color name="primary60">#64CAF7</color>
+    <color name="primary70">#94D6FD</color>
+    <color name="primary80">#C3E6FF</color>
+    <color name="primary90">#F2F9FF</color>
+
+    <color name="secondary10">#122600</color>
+    <color name="secondary20">#255700</color>
+    <color name="secondary30">#338702</color>
+    <color name="secondary40">#3EB808</color>
+    <color name="secondary50">#4BE817</color>
+    <color name="secondary60">#6DF54D</color>
+    <color name="secondary70">#94FC84</color>
+    <color name="secondary80">#C1FFBC</color>
+    <color name="secondary90">#F2FFF2</color>
+
+    <color name="neutral10">#222626</color>
+    <color name="neutral20">#444B4B</color>
+    <color name="neutral30">#676F70</color>
+    <color name="neutral40">#8A9395</color>
+    <color name="neutral50">#ADB7BA</color>
+    <color name="neutral60">#C0C7CB</color>
+    <color name="neutral70">#D3D8DB</color>
+    <color name="neutral80">#E6E9EC</color>
+    <color name="neutral90">#FAFBFC</color>
+
+    <color name="accent10">#372C0C</color>
+    <color name="accent20">#594816</color>
+    <color name="accent30">#987D2C</color>
+    <color name="accent40">#BF9E3B</color>
+    <color name="accent50">#EAC146</color>
+    <color name="accent60">#FDDB75</color>
+    <color name="accent70">#FADE8A</color>
+
+    <color name="warning10">#3A0E0E</color>
+    <color name="warning20">#5E1A1A</color>
+    <color name="warning30">#8F2A2A</color>
+    <color name="warning40">#A63232</color>
+    <color name="warning50">#CF4040</color>
+    <color name="warning60">#D55454</color>
+    <color name="warning70">#ED7070</color>
+    <color name="warning80">#FFB3B3</color>
+    <color name="warning90">#FFEBEB</color>
+</resources>
